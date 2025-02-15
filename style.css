@@ -1,58 +1,31 @@
+/* Style for centering content and basic typography */
 body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #ffe6e6;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
 }
 
-h1 {
-    color: #ff4d4d;
-    font-size: 2.5em;
-    margin-top: 50px;
+/* Common styling for messages and the GIF container */
+.message, .gif-container {
+  opacity: 0; /* Start hidden */
+  transition: opacity 1s ease; /* Smooth fade effect */
+  text-align: center;
+  margin: 20px;
+  font-size: 2rem;
 }
 
-.buttons {
-    margin-top: 30px;
-}
-
-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.yes {
-    background-color: #ff4d4d;
-    color: white;
-}
-
-.yes:hover {
-    background-color: #ff3333;
-}
-
-.no {
-    background-color: #666;
-    color: white;
-}
-
-.no:hover {
-    background-color: #444;
-}
-
-.hidden {
-    display: none;
-}
-
-.gif-container {
-    margin-top: 20px;
-}
-
+/* Ensure the GIF fits well */
 .gif-container img {
-    width: 250px;
-    border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Class to reveal elements */
+.visible {
+  opacity: 1;
 }
