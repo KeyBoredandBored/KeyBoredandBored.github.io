@@ -1,5 +1,5 @@
 function sayYes() {
-    document.body.innerHTML = "<h1>YAY! 💖 See you on Valentine’s Day! 😊</h1>";
+    document.body.innerHTML = "<h1>YAYY! 💖 😊</h1>";
 }
 
 function askAgain() {
